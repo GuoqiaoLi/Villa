@@ -9,7 +9,7 @@ import com.google.android.gms.maps.model.LatLng;
 import java.io.IOException;
 import java.util.List;
 
-import beans.Department;
+import beans.Apartment;
 
 /**
  * Created by Guoqiao on 10/11/15.
@@ -31,7 +31,7 @@ public class MapHelper {
     }
 
     /* give user address, find all possible renting nearby */
-    public List<Department> findNearbyApt(LatLng ll){
+    public List<Apartment> findNearbyApt(LatLng ll){
 
 
         return null;

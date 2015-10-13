@@ -5,16 +5,26 @@ import java.util.List;
 /**
  * Created by Guoqiao on 10/11/15.
  */
-public class Department {
+public class Apartment {
     private String type;
     private String locality;
     private List<String> amenities;
     private String price;
     private String bedroom;
+    private String landlord;
     private String bathroom;
+    private String kitchen;
+    private String rating;
     private double longitude;
     private double latitude;
 
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
 
     public double getLatitude() {
         return latitude;
@@ -61,7 +71,7 @@ public class Department {
     }
 
     public void setBedroom(String bedroom) {
-        this.bedroom = bedroom;
+        this.bedroom = bedroom + "BedRoom";
     }
 
     public String getBathroom() {
@@ -69,7 +79,7 @@ public class Department {
     }
 
     public void setBathroom(String bathroom) {
-        this.bathroom = bathroom;
+        this.bathroom = bathroom + "BathRoom";
     }
 
     public double getLongitude() {
@@ -78,5 +88,21 @@ public class Department {
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
+    }
+
+    public String getLandlord() {
+        return landlord;
+    }
+
+    public void setLandlord(String landlord) {
+        this.landlord = landlord;
+    }
+
+    public String getKitchen() {
+        return kitchen;
+    }
+
+    public void setKitchen(String kitchen) {
+        this.kitchen = kitchen + "Kitchen";
     }
 }

@@ -4,26 +4,22 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 
-import com.example.guoqiao.villa.MapsActivity;
-import com.example.guoqiao.villa.R;
+import android.os.Bundle;
+
+import android.view.View;
+import android.widget.TextView;
+
 
 import adapter.slideAdapter;
+import beans.Apartment;
+import helper.SharePreferenceHelper;
 
 
 public class MainActivity extends Activity {
-    private String address;
     private String[] imageUrl;
-    private String name;
-    private String landlord;
-    private int bedroom;
-    private int bathroom;
-    private int kitchen;
+    private Apartment apartment;
+    private SharePreferenceHelper helper;
 
     private ViewPager viewPager;
     private PagerAdapter pagerAdapter;
@@ -35,11 +31,27 @@ public class MainActivity extends Activity {
 
         setBasicInformation();
         setViewPager();
+        setLayout();
     }
 
     //-------- Set up house information from intent --------//
     public void setBasicInformation(){
+        helper = new SharePreferenceHelper(this);
+        apartment = helper.fetchApt();
+    }
 
+    public void setLayout(){
+        TextView address = (TextView) findViewById(R.id.address);
+        TextView price = (TextView) findViewById(R.id.price);
+        TextView bedroom = (TextView) findViewById(R.id.bedroom);
+        TextView bathroom = (TextView) findViewById(R.id.bathroom);
+        TextView kitchen = (TextView) findViewById(R.id.kitchen);
+
+        address.setText(apartment.getLocality());
+        price.setText(apartment.getPrice());
+        bedroom.setText(apartment.getBedroom());
+        kitchen.setText(apartment.getKitchen());
+        bathroom.setText(apartment.getBathroom());
     }
 
     //-------- Set up viewPager --------//
