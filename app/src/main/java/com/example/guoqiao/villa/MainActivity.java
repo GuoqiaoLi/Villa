@@ -1,15 +1,14 @@
 package com.example.guoqiao.villa;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-
-import android.os.Bundle;
-
 import android.view.View;
 import android.widget.TextView;
-
 
 import adapter.slideAdapter;
 import beans.Apartment;
@@ -17,18 +16,21 @@ import helper.SharePreferenceHelper;
 
 
 public class MainActivity extends Activity {
-    private String[] imageUrl;
     private Apartment apartment;
     private SharePreferenceHelper helper;
 
     private ViewPager viewPager;
     private PagerAdapter pagerAdapter;
 
+    private FragmentManager fragmentManager;
+    private FragmentTransaction fragmentTransaction;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         setBasicInformation();
         setViewPager();
         setLayout();
@@ -65,4 +67,5 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
+
 }

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/small_margin_size"
+        android:layout_below="@id/error_message"
+        android:id="@+id/first_name_wrapper">
+        <TextView
+            android:id="@+id/first_name_tag"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:gravity="center_vertical"
+            android:text="First Name"
+            android:textSize="@dimen/small_font_size"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_btn_height"
+            android:layout_toRightOf="@+id/first_name_tag"
+            android:layout_marginLeft="@dimen/small_margin_size"
+            android:background="@drawable/medium_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/small_margin_size"
+        android:layout_below="@id/first_name_wrapper"
+        android:id="@+id/last_name_wrapper">
+        <TextView
+            android:id="@+id/last_name_tag"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:gravity="center_vertical"
+            android:text="Last Name"
+            android:textSize="@dimen/small_font_size"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_btn_height"
+            android:layout_toRightOf="@+id/last_name_tag"
+            android:layout_marginLeft="@dimen/small_margin_size"
+            android:background="@drawable/medium_btn" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/small_margin_size"
+        android:id="@+id/password_wrapper"
+        android:layout_below="@+id/last_name_wrapper">
+        <TextView
+            android:id="@+id/password_tag"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:gravity="center_vertical"
+            android:text="Password"
+            android:textSize="@dimen/small_font_size"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_btn_height"
+            android:layout_toRightOf="@+id/password_tag"
+            android:layout_marginLeft="@dimen/small_margin_size"
+            android:background="@drawable/medium_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/small_margin_size"
+        android:id="@+id/re_password_wrapper"
+        android:layout_below="@+id/password_wrapper">
+        <TextView
+            android:id="@+id/re_password_tag"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:gravity="center_vertical"
+            android:text="Re-enter"
+            android:textSize="@dimen/small_font_size"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/re_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_btn_height"
+            android:layout_toRightOf="@+id/re_password_tag"
+            android:layout_marginLeft="@dimen/small_margin_size"
+            android:background="@drawable/medium_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/small_margin_size"
+        android:id="@+id/email_wrapper"
+        android:layout_below="@+id/re_password_wrapper">
+        <TextView
+            android:id="@+id/email_tag"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:gravity="center_vertical"
+            android:text="Email"
+            android:textSize="@dimen/small_font_size"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_btn_height"
+            android:layout_toRightOf="@+id/email_tag"
+            android:layout_marginLeft="@dimen/small_margin_size"
+            android:background="@drawable/medium_btn" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/gender_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/medium_margin_size"
+        android:paddingRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/small_margin_size"
+        android:layout_below="@id/email_wrapper">
+
+        <TextView
+            android:id="@+id/gender_tag"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:gravity="center_vertical"
+            android:text="Gender"
+            android:textSize="@dimen/small_font_size"
+            android:layout_alignParentLeft="true"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:text="Male"
+            android:id="@+id/radio_male"
+            android:layout_marginLeft="@dimen/small_margin_size"
+            android:layout_toRightOf="@+id/gender_tag"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_btn_height"
+            android:text="Female"
+            android:id="@+id/radio_female"
+            android:layout_toRightOf="@+id/radio_male"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/identity_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/medium_margin_size"
+        android:paddingRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/medium_margin_size"
+        android:layout_below="@id/gender_wrapper">
+
+        <TextView
+            android:id="@+id/identity_tag"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:gravity="center_vertical"
+            android:text="Identity"
+            android:textSize="@dimen/medium_font_size"
+            android:layout_alignParentLeft="true"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="@dimen/medium_btn_height"
+            android:text="Individual"
+            android:id="@+id/individual"
+            android:layout_marginLeft="@dimen/small_margin_size"
+            android:layout_toRightOf="@+id/identity_tag"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_btn_height"
+            android:text="Company"
+            android:id="@+id/company"
+            android:layout_toRightOf="@+id/individual"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/identity_wrapper"
+        android:layout_marginTop="@dimen/medium_margin_size"
+        android:text="Register"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:padding="20dp"
+        android:onClick="register"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+</ScrollView>

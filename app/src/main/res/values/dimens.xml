@@ -3,4 +3,20 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="small_font_size">16dp</dimen>
+    <dimen name="medium_font_size">20dp</dimen>
+    <dimen name="large_font_size">24dp</dimen>
+
+    <dimen name="small_margin_size">20dp</dimen>
+    <dimen name="medium_margin_size">40dp</dimen>
+    <dimen name="large_margin_size">60dp</dimen>
+    <dimen name="super_large_margin_size">100dp</dimen>
+
+    <dimen name="small_btn_width">60dp</dimen>
+    <dimen name="small_btn_height">20dp</dimen>
+    <dimen name="medium_btn_width">100dp</dimen>
+    <dimen name="medium_btn_height">40dp</dimen>
+    <dimen name="large_btn_width">60dp</dimen>
+    <dimen name="large_btn_height">120dp</dimen>
 </resources>

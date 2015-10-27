@@ -1,18 +1,13 @@
 package com.example.guoqiao.villa;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.backup.SharedPreferencesBackupHelper;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.location.Location;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.example.guoqiao.villa.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -30,7 +25,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.MyInfoWindowAdapter;
 import beans.Apartment;
 import helper.MapHelper;
 import helper.SharePreferenceHelper;
@@ -49,8 +43,6 @@ public class MapsActivity extends FragmentActivity implements
     private Location currLocation;
     private LocationRequest locationRequest;
     private List<Apartment> apartments;
-    private SharedPreferences sp;
-    private MyInfoWindowAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +58,6 @@ public class MapsActivity extends FragmentActivity implements
     }
 
     private void intializeAll() throws IOException {
-//        Toast.makeText(this, "map set up", Toast.LENGTH_LONG).show();
         intializeMap();
         initializeLocation();
         initializeApts();

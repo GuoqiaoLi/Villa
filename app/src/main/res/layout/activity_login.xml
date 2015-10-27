@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/super_large_margin_size"
+        android:id="@+id/email_wrapper">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_btn_height"
+            android:hint="email"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/small_margin_size"
+        android:layout_below="@id/email_wrapper"
+        android:id="@+id/password_wrapper">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_btn_height"
+            android:hint="password"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_marginTop="@dimen/medium_font_size"
+        android:layout_below="@id/password_wrapper"
+        android:padding="10dp"
+        android:textSize="@dimen/medium_font_size"
+        android:text="Log In"
+        android:onClick="login"/>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_below="@id/login_btn"
+        android:padding="10dp"
+        android:textSize="@dimen/medium_font_size"
+        android:text="Sign Up"
+        android:onClick="register"/>
+
+    <Button
+        android:id="@+id/forget_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin_size"
+        android:layout_marginRight="@dimen/medium_margin_size"
+        android:layout_below="@id/signup_btn"
+        android:padding="10dp"
+        android:textSize="@dimen/medium_font_size"
+        android:text="Forget Password"
+        android:onClick="forget"/>
+
+
+
+</RelativeLayout>
